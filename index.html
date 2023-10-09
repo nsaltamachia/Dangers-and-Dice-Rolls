@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="gameMessages"> 
+            <h3 class="message">placeholder message</h3>
+        </section>
+        <section id="gameStats">
+            <div id="playerStats">
+                <p class="playerHealthText">PLAYER HEALTH<span id="pHealthNumber">##</span></p> 
+                <div class="pHealthBar"></div>
+                <p id="playerRolls">previous rolls <span id="pRolls">#####</span></p>
+            </div>
+            <div id="computerStats">
+                <p class="computerHealthText">ENEMY HEALTH<span id="cHealthNumber">##</span></p>
+                <div class="cHealthBar"></div>
+                <p id="computerRolls">previous rolls <span id="pRolls">#####</span></p>
+            </div> 
+
+            
+        </section>
+        <section class="controlPanel">
+            <button id="resetButton">RESET</button>
+            <div class="rollDisplay">
+                <h1 id="rollReadout">##</h1>
+            </div>
+            <button id="roll">ROLL</button>
+            
+        </section>
+    </main>
+</body>
+</html>
+
+
