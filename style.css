@@ -44,6 +44,7 @@ main {
 .message {
     color: white;
     font-size: 25px;
+    text-shadow: 1px black;
 }
 
 
@@ -105,8 +106,9 @@ main {
 
 #playerRolls {
     color: rgb(255, 255, 255);
-   font-size: 30px;
+    font-size: 30px;
     margin-top: 2px;
+    
 }
 #computerRolls {
     color: white;
@@ -143,6 +145,7 @@ main {
     width: 80%;
     height: 25%;
     margin: 10px;
+    cursor: pointer;
 }
 
 
@@ -165,7 +168,7 @@ main {
     text-align: center;
 }
 
-#roll {
+#rollButton {
     color: rgb(0, 0, 0);
     font-size: 30px;
     border: 3px solid white; 
@@ -173,5 +176,6 @@ main {
     margin: 10px;
     width: 90%;
     height: 40%;
+    cursor: pointer;
     
 }
