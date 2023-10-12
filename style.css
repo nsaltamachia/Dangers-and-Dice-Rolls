@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: MedievalSharp;
-    
+    border: 1px solid red;
 }
 
 body {
@@ -10,9 +10,7 @@ body {
     width: 100vw;
     background-size: auto;
     display: flex;
-
     justify-content: center;
-
 }
 
 main {
@@ -24,12 +22,7 @@ main {
     height: 90%;
     align-items: flex-end;
     justify-content: space-evenly;
-
 }
-
-
-
-
 
 #gameMessages {
     display: flex;
@@ -42,6 +35,7 @@ main {
     border: 5px solid rgb(255, 255, 255);
     border-radius: 15px;
 }
+
 .message {
     color: white;
     font-size: 35px;
@@ -49,29 +43,24 @@ main {
     text-align: center;
 }
 
-
-
-
-
 #gameStats {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     width: 100%;
-    height: 20%;
+    height: 70%;
+    margin-top: 60px;
     /*border: 5px solid rgb(255, 255, 255);
     border-radius: 15px;
     background-color: rgba(78, 74, 74, .3);*/
-    
 }
 
 #playerStats {
     width: 45%;
     height: 100%;
-    
 }
-#computerStats {
 
+#computerStats {
     width: 45%;
     height: 100%;
 }
@@ -84,6 +73,7 @@ main {
     margin-bottom: 0;
     border-radius: 10px;
 }
+
 .cHealthBar {
     border: 3px solid rgb(255, 255, 255);
     height: 30px;
@@ -92,20 +82,22 @@ main {
     border-radius: 10px;
 }
 
-
 .playerHealthText {
     font-size: 45px;
     color: white;
     margin: 0;
 }
+
 #pHealthNumber {
     margin-left: 30px;
 }
+
 .computerHealthText {
     font-size: 45px;
     color: white;
     margin: 0;
 }
+
 #cHealthNumber {
     margin-left: 30px;
 }
@@ -113,24 +105,14 @@ main {
 #playerRolls {
     color: rgb(255, 255, 255);
     font-size: 30px;
-    margin-top: 2px;
-    
+    margin-top: 2px; 
 }
+
 #computerRolls {
     color: white;
     font-size: 30px;
     margin-top: 2px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .controlPanel {
     background-color:rgb(46, 43, 43);
@@ -147,15 +129,12 @@ main {
     
 }
 
-
 #resetButton {
     width: 80%;
     height: 25%;
     margin: 10px;
     cursor: pointer;
-    
 }
-
 
 .rollDisplay {
     display: flex;
@@ -164,7 +143,6 @@ main {
     background-color: white;
     border: 3px solid white;
     width: 90%;
-
 }
 
 #rollReadout {
@@ -185,5 +163,122 @@ main {
     width: 90%;
     height: 40%;
     cursor: pointer;
-    
+}
+
+@media (max-width: 414px) {
+
+main {
+    background-image: url('./Assets/Background\ For\ Mobile.jpg');
+    background-position: 0% 90%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gameMessages {
+    height: 15%;
+    width: 86%;
+}
+
+#pHealthNumber {
+    margin-left: 12px;
+}
+#cHealthNumber {
+    margin-left: 12px;
+}
+
+.message {
+    font-size: 20px;
+}
+#gameStats {
+    align-self: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-right: 20%;
+    width: 100%;
+    height: 70%;
+    /*border: 5px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    background-color: rgba(78, 74, 74, .3);*/
+}
+
+#playerStats {
+    width: 40%;
+    height: 30%;
+}
+
+#computerStats {
+    width: 40%;
+    height: 30%;
+}
+
+.pHealthBar .cHealthBar {
+    border: 3px solid rgb(255, 255, 255);
+    height: 30px;
+    background-color: red;
+    width: 100;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+
+
+.playerHealthText {
+    font-size: 30px;
+}
+
+.computerHealthText {
+    font-size: 30px;
+}
+
+#playerRolls {
+    font-size: 20px;
+}
+
+#computerRolls {
+    font-size: 20px;
+}
+
+.controlPanel {
+    height: 30%;
+    width: 80%;
+   
+}
+
+
+
+.rollDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+#rollReadout {
+    height: 60%;
+    width: 100%;
+    border: 3px solid white;
+    font-size: 40px;
+    color: rgb(48, 48, 48);
+    text-align: center;
+}
+
+#rollButton {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    border: 3px solid white; 
+    background-color: rgb(247, 231, 2);
+    margin: 10px;
+    width: 90%;
+    height: 40%;
+    cursor: pointer;
+}
+
+
+
 }

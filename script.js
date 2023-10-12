@@ -63,7 +63,7 @@ rollEl.addEventListener("click", () => {
     displayGameMessage();
     updatePlayerStats();
     updateComputerStats();
-    checkforDraw()
+    checkForWin()
     addRollToLists();
 })
 
@@ -97,7 +97,7 @@ function rollDice() {
 }
 
 function displayGameMessage() {
-    gameMessageEl.innerText = `The computer rolled a ${currentComputerRoll}.`;
+    gameMessageEl.innerText = `The computer rolled ${currentComputerRoll}.`;
 }
 
 function updatePlayerStats() {
@@ -116,24 +116,36 @@ function updateComputerStats() {
     
 }
 
-function checkforDraw() {
-    if (cHealthNumber <= 0) {
+function checkForWin() {
+
+    if (pHealthNumber <= 0 && cHealthNumber <= 0) {
+        pHealthNumberEl.innerHTML = 0;
+        pHealthBarEl.style.opacity = 0;
         cHealthNumberEl.innerHTML = 0;
         cHealthBarEl.style.opacity = 0;
-        gameMessageEl.innerText = `You defeated the ogre! 
-        Congratulations! 
-        Press RESET to play again!`
+        gameMessageEl.innerText = `It's a draw! 
+        Press RESET to play again!`;
+        rollEl.setAttribute("disabled", "true");
     } else if (pHealthNumber <= 0) {
         pHealthNumberEl.innerHTML = 0;
         pHealthBarEl.style.opacity = 0;
         gameMessageEl.innerText = `You lost the battle...
         Press RESET to try again!`;
-    } else if (pHealthNumber <= 0 && cHealthNumber <= 0) 
-        gameMessageEl.innerText = `It's a draw! 
-        Press RESET to play again!`;
+        rollEl.setAttribute("disabled", "true");
+    } else if (cHealthNumber <= 0) {
+        cHealthNumberEl.innerHTML = 0;
+        cHealthBarEl.style.opacity = 0;
+        gameMessageEl.innerText = `You defeated the ogre! 
+        Congratulations! 
+        Press RESET to play again!`
+        rollEl.setAttribute("disabled", "true");
     }
+}
 
+
+    
 function resetGame() {
+    rollEl.removeAttribute("disabled");
     playerHealth = 100;
     computerHealth = 100;
     currentPlayer = "1";
