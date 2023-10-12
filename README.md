@@ -32,7 +32,9 @@ I wrote the game's function/operation in "vanilla" Javascript, with the all game
 -game message updates (conditional innerTEXT changes
 
 **Challenging Coding**
-Given the number of similarly-named elements, it was a little hard to keep them all straight.
+Given the number of similarly-named elements, it was a little hard to keep them all straight. I could be more thoughtful of naming conventions, with consideration for how often a particular phrase would be repeated among elements.
+
+At the onset of building the game I was coding for a second player and with Ohz's help that, since it would be a computer opponent, I could streamline the number of functions needed for gameplay by building much of it into a one click event. That was certainly a relief and I fell like I've learned another thing to consider in the planning stages that will lead to better DRY coding.
 
 
 **Link to Game**
