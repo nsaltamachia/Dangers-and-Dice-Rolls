@@ -2,7 +2,7 @@
 
 This game is called Random Attack. It's based on the simple story of the player being ambushed by an ogre, 
 and uses random number generation to determine player attack and damage values with each turn. The goal of the game is to deplete the enemy ogre's health
-before they can do so to the player.
+before they can do so to the player. The user purpose of the game is a little silly: I play Dungeons & Dragons with my friends and we're a bit of a superstitious bunch regarding luck and dice rolls: the main idea of the game is to get the bad rolls, like "natural 1's" out of the way prior to a campaign session...
 
 **Game Pictures and Game Play**
 ![Game Load](https://github.com/nsaltamachia/Project1Game/assets/145282981/3ef0bbb3-9434-4fc0-99d1-a8a775cb89c6)
@@ -32,7 +32,7 @@ I wrote the game's function/operation in "vanilla" Javascript, with the all game
 -game message updates (conditional innerTEXT changes)
 
 **Challenging Coding**
-The CSS was a little tricky, I still have some trouble getting container elements (like the game message) to remain a certain size before its content appears. 
+The CSS was a little tricky, I believe I have a good grasp of using display: flex but I still have some trouble getting container elements (like the game message) to remain a certain size before its content appears. 
 
 Given the number of similarly-named elements, it was a little hard to keep them all straight. I could be more thoughtful of naming conventions, with consideration for how often a particular phrase would be repeated among elements.
 
