@@ -105,6 +105,13 @@ function updatePlayerStats() {
     pHealthNumber -= currentComputerRoll;
     pHealthBarEl.style.width = pHealthBar + "%";
     pHealthNumberEl.innerHTML = pHealthNumber;
+    let pHealthBarWidth = parseFloat(pHealthBarEl.style.width);
+    if (pHealthBarWidth <= 70 && pHealthBarWidth > 30) {
+        pHealthBarEl.style.backgroundColor = "yellow";
+    }
+    if (pHealthBarWidth <= 30) {
+        pHealthBarEl.style.backgroundColor = "red";
+    }
     
 }
 
@@ -113,7 +120,13 @@ function updateComputerStats() {
     cHealthNumber -= currentPlayerRoll;
     cHealthBarEl.style.width = cHealthBar + "%";
     cHealthNumberEl.innerHTML = cHealthNumber;
-    
+    let cHealthBarWidth = parseFloat(cHealthBarEl.style.width);
+    if (cHealthBarWidth <= 70 && cHealthBarWidth >30) {
+        cHealthBarEl.style.backgroundColor = "yellow";
+    }
+    if (cHealthBarWidth <= 30) {
+        cHealthBarEl.style.backgroundColor = "red";
+    }
 }
 
 function checkForWin() {

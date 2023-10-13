@@ -66,7 +66,7 @@ main {
 .pHealthBar {
     border: 3px solid rgb(255, 255, 255);
     height: 30px;
-    background-color: red;
+    background-color: rgb(28, 104, 5);
     width: 100;
     margin-bottom: 0;
     border-radius: 10px;
@@ -75,7 +75,7 @@ main {
 .cHealthBar {
     border: 3px solid rgb(255, 255, 255);
     height: 30px;
-    background-color: red;
+    background-color: rgb(28, 104, 5);
     width: 100;
     border-radius: 10px;
 }
@@ -213,10 +213,18 @@ main {
     height: 30%;
 }
 
-.pHealthBar .cHealthBar {
+.pHealthBar {
     border: 3px solid rgb(255, 255, 255);
     height: 30px;
-    background-color: red;
+    background-color: green;
+    width: 100;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+.cHealthBar {
+    border: 3px solid rgb(255, 255, 255);
+    height: 30px;
+    background-color: green;
     width: 100;
     margin-bottom: 0;
     border-radius: 10px;
