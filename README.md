@@ -29,9 +29,11 @@ I wrote the game's function/operation in "vanilla" Javascript, with the all game
 -player attack value (computer damage) -Math.random method
 -computer attack value (player damage) -Math.random method
 -updating game stats (health bars, health numbers, roll histories) -conditional element style changes.push method
--game message updates (conditional innerTEXT changes
+-game message updates (conditional innerTEXT changes)
 
 **Challenging Coding**
+The CSS was a little tricky, I still have some trouble getting container elements (like the game message) to remain a certain size before its content appears. 
+
 Given the number of similarly-named elements, it was a little hard to keep them all straight. I could be more thoughtful of naming conventions, with consideration for how often a particular phrase would be repeated among elements.
 
 At the onset of building the game I was coding for a second player and with Ohz's help that, since it would be a computer opponent, I could streamline the number of functions needed for gameplay by building much of it into a one click event. That was certainly a relief and I fell like I've learned another thing to consider in the planning stages that will lead to better DRY coding.
@@ -44,5 +46,5 @@ https://nsaltamachia.github.io/Project1Game/
 **Next Steps**
 To improve this game over time, I would like to add some music and sound effects for certain roll results along with the game end event. I would also like to build different opponents with different attributes that would affect how much health they begin with, how much damage the deal and damage they inflict based on their dice rolls(buffs, perhaps). Perhaps those different opponents might inhabit entirely new "locations" or stages of the player story travel. I could also include certain limited-use buffs that the player would be able to utilize.
 
-I will definitely implement responsive design to enable a mobile device experience.
+I will definitely go back to get the CSS the way I REALLY want it to look and implement responsive design to enable a mobile device experience.
 
