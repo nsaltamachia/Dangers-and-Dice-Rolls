@@ -46,5 +46,7 @@ https://nsaltamachia.github.io/Project1Game/
 **Next Steps**
 To improve this game over time, I would like to add some music and sound effects for certain roll results along with the game end event. I would also like to build different opponents with different attributes that would affect how much health they begin with, how much damage the deal and damage they inflict based on their dice rolls(buffs, perhaps). Perhaps those different opponents might inhabit entirely new "locations" or stages of the player story travel. I could also include certain limited-use buffs that the player would be able to utilize.
 
+To add some nuance to the game with regard to the simplicity of the player interaction and the majority of game logic coming from that one action, I will add some setTimeouts to the logic so that the user has something to "watch" after each click, instead of having all of each turn's effects occur at once.
+
 I will definitely go back to get the CSS the way I REALLY want it to look and implement responsive design to enable a mobile device experience.
 
