@@ -51,9 +51,6 @@ main {
     width: 100%;
     height: 70%;
     margin-top: 60px;
-    /*border: 5px solid rgb(255, 255, 255);
-    border-radius: 15px;
-    background-color: rgba(78, 74, 74, .3);*/
 }
 
 #playerStats {
@@ -204,9 +201,6 @@ main {
     margin-right: 20%;
     width: 100%;
     height: 70%;
-    /*border: 5px solid rgb(255, 255, 255);
-    border-radius: 15px;
-    background-color: rgba(78, 74, 74, .3);*/
 }
 
 #playerStats {
@@ -252,8 +246,6 @@ main {
    
 }
 
-
-
 .rollDisplay {
     display: flex;
     justify-content: center;
@@ -280,7 +272,4 @@ main {
     height: 40%;
     cursor: pointer;
 }
-
-
-
 }

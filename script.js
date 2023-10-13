@@ -142,8 +142,6 @@ function checkForWin() {
     }
 }
 
-
-    
 function resetGame() {
     rollEl.removeAttribute("disabled");
     playerHealth = 100;
