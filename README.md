@@ -25,11 +25,7 @@ I built the game with an HTML5 framework, using flex display to arrange the mess
 
 I created the game background with Adobe Illustrator and the ogre was digitally illustrated by niece, Emma Campbell. I styles the game elements with CSS, mirroring tradtional "fighting game" elements like the health bar, and style the overall appearance to match the medieval/fantasty theme of the dice-rolling game, Dungeons & Dragons. I leaned for an all-ages, cartoonish, appearance with the look of the game, in an attempt to broaden the somewhat "niche" base of users who might already be familiar with the Dungeons & Dragons theme.
 
-I wrote the game's function/operation in "vanilla" Javascript, with the all game state changes for each "turn" resulting from one click of the ROLL button. Some of these changes include: 
--player attack value (computer damage) -Math.random method
--computer attack value (player damage) -Math.random method
--updating game stats (health bars, health numbers, roll histories) -conditional element style changes.push method
--game message updates (conditional innerTEXT changes)
+I wrote the game's function/operation in "vanilla" Javascript, with the all game state changes for each "turn" resulting from one click of the ROLL button. Some of these changes include: random number generation, conditional element styling, conditional game messages, and presenting game state history.
 
 **Challenging Coding**
 The CSS was a little tricky, I believe I have a good grasp of using display: flex but I still have some trouble getting container elements (like the game message) to remain a certain size before its content appears. 
