@@ -1,8 +1,7 @@
 **Nick Saltamachia SEI - Project 1 - Random Attack**
 
-This game is called Random Attack. It's based on the simple story of the player being ambushed by an ogre, 
-and uses random number generation to determine player attack and damage values with each turn. The goal of the game is to deplete the enemy ogre's health
-before they can do so to the player. The user purpose of the game is a little silly: I play Dungeons & Dragons with my friends and we're a bit of a superstitious bunch regarding luck and dice rolls: the main idea of the game is to get the bad rolls, like "natural 1's" out of the way prior to a campaign session...
+This game is called Ambush. It's based on the simple story of the player being ambushed by an ogre, 
+and uses random number generation to determine player attack and damage values with each turn. The goal of the game is to deplete the enemy ogre's health before they can do so to the player. The user purpose of the game is a little silly: I play Dungeons & Dragons with my friends and we're a bit of a superstitious bunch regarding luck and dice rolls: the main idea of the game is to get the bad rolls, like "natural 1's" out of the way prior to a campaign session...
 
 **Game Pictures and Game Play**
 ![Game Load](https://github.com/nsaltamachia/Project1Game/assets/145282981/3ef0bbb3-9434-4fc0-99d1-a8a775cb89c6)
@@ -37,12 +36,7 @@ At the onset of building the game I was coding for a second player and with Ohz'
 
 **Link to Game**
 
-https://nsaltamachia.github.io/Project1Game/
+https://nsaltamachia.github.io/Ambush
 
-**Next Steps**
-To improve this game over time, I would like to add some music and sound effects for certain roll results along with the game end event. I would also like to build different opponents with different attributes that would affect how much health they begin with, how much damage the deal and damage they inflict based on their dice rolls(buffs, perhaps). Perhaps those different opponents might inhabit entirely new "locations" or stages of the player story travel. I could also include certain limited-use buffs that the player would be able to utilize.
 
-To add some nuance to the game with regard to the simplicity of the player interaction and the majority of game logic coming from that one action, I will add some setTimeouts to the logic so that the user has something to "watch" after each click, instead of having all of each turn's effects occur at once.
-
-I will definitely go back to get the CSS the way I REALLY want it to look and implement responsive design to enable a mobile device experience.
 
