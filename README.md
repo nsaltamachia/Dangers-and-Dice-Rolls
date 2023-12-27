@@ -25,5 +25,5 @@ I wrote the game's function/operation in "vanilla" Javascript, with each round o
 
 **Link to Game**
 
-https://nsaltamachia.github.io/Project1Game/
+https://nsaltamachia.github.io/Dangers-and-Dice-Rolls/
 
