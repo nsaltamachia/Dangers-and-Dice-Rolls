@@ -1,6 +1,7 @@
-**Nick Saltamachia SEI - Project 1 - Dangers & Dice Rolls**
+**Dangers & Dice Rolls**
+Nick Saltamachia 
 
-Dangers & Dice Rolls is a simple game with an important function...I play Dungeons & Dragons with my friends, and we're a bit of a superstitious bunch regarding luck and dice rolls...the main idea of the game is to get the bad rolls, like "nat 1's," out of the way prior to a campaign session...
+Dangers & Dice Rolls is a simple game with an "important" function...I play Dungeons & Dragons with my friends, and we're a bit of a superstitious bunch regarding luck and dice rolls...the main purpose of this game is to get those nasty bad rolls, like "nat 1's," out of the way prior to a campaign session...
 On initializing, the user is placed in an ambush scenario where they must roll their dice to defeat the attacking ogre.
 
 **Game Pictures and Game Play**
