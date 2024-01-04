@@ -1,65 +1,65 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Fjalla One', sans-serif;
-    letter-spacing: .25vw;
+  box-sizing: border-box;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 0.25vw;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-size: auto;
-    display: flex;
-    justify-content: center;
-    background-image: url('./Assets/RandomAttackBackground_desktop.jpg');
-    background-position: 20% 60%;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-image: url("./Assets/RandomAttackBackground_desktop.jpg");
+  background-position: 20% 60%;
 }
 
 main {
-    
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    align-items: flex-end;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
 
 #gameMessages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    background-color: rgba(78, 74, 74, .7);
-    width: 60%;
-    min-height: 25%;
-    border: 5px solid rgb(178, 178, 178);
-    border-radius: 15px;
-    margin-top: 15px;
-    margin-right: 30px;
-    text-shadow: 1px 1px 1px black;
-    box-shadow: 1px 1px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  background-color: rgba(78, 74, 74, 0.7);
+  width: 60%;
+  min-height: 25%;
+  border: 5px solid rgb(178, 178, 178);
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-right: 30px;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 1px black;
 }
 
 .message {
-    color: white;
-    font-size: 2rem;
-    text-shadow: 1px black;
-    text-align: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px black;
+  text-align: center;
 }
 
 #gameStats {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    width: 100%;
-    height: 70%;
-    margin-top: 60px;
-    text-shadow: 1px 1px 1px black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 100%;
+  height: 70%;
+  margin-top: 60px;
+  text-shadow: 1px 1px 1px black;
 }
 
-#playerStats, #computerStats {
-    width: 45%;
-    height: 100%;
+#playerStats,
+#computerStats {
+  width: 45%;
+  height: 100%;
 }
 
 .shake {
@@ -67,132 +67,143 @@ main {
 }
 
 @keyframes shakeAnimation {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.pHealthBar, .cHealthBar {
-    border: 3px solid rgb(255, 255, 255);
-    height: 30px;
-    background-color: rgb(12, 5, 104);
-    width: 100;
-    border-radius: 10px;
-    box-shadow: 1px 2px 1px black;
+.pHealthBar,
+.cHealthBar {
+  border: 3px solid rgb(255, 255, 255);
+  height: 2rem;
+  background-color: rgb(12, 5, 104);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 2px 1px black;
 }
 
-.playerHealthText, .computerHealthText {
-    font-size: 2.5rem;
-    color: white;
-    margin: 0;
+.playerHealthText,
+.computerHealthText {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
 }
 
-#pHealthNumber, #cHealthNumber {
-    display: inline-block;
-    position: relative;
-    margin-left: 30px;
+#pHealthNumber,
+#cHealthNumber {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
 }
 
 #playerRolls {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    margin-top: 2px; 
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-top: 2px;
 }
 
 #computerRolls {
-    color: white;
-    font-size: 30px;
-    margin-top: 2px;
+  color: white;
+  font-size: 30px;
+  margin-top: 2px;
 }
 
 .controlPanel {
-    background-color:rgb(46, 43, 43);
-    border: 3px solid rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;;
-    height: 50%;
-    width: 40%;
-    border-radius: 15px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 1px black;
+  background-color: rgb(46, 43, 43);
+  border: 3px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 40%;
+  border-radius: 15px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 1px black;
 }
 
 #resetButton {
-    border: 3px solid rgb(241, 100, 6); 
-    font-size: 20px;
-    width: 80%;
-    height: 25%;
-    margin: 10px;
-    cursor: pointer;
+  border: 3px solid rgb(241, 100, 6);
+  font-size: 20px;
+  width: 80%;
+  height: 25%;
+  margin: 10px;
+  cursor: pointer;
 }
 
 .rollDisplay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: 3px solid white;
-    width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid white;
+  width: 90%;
 }
 
 #rollReadout {
-    height: 60px;
-    width: 100%;
-    border: 3px solid white;
-    font-size: 70px;
-    color: rgb(48, 48, 48);
-    text-align: center;
+  height: 60px;
+  width: 100%;
+  border: 3px solid white;
+  font-size: 70px;
+  color: rgb(48, 48, 48);
+  text-align: center;
 }
 
 #rollButton {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    border: 3px solid rgb(241, 100, 6); 
-    background-color: rgb(247, 231, 2);
-    margin: 10px;
-    width: 90%;
-    height: 40%;
-    cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  border: 3px solid rgb(241, 100, 6);
+  background-color: rgb(247, 231, 2);
+  margin: 10px;
+  width: 90%;
+  height: 40%;
+  cursor: pointer;
 }
 
 #muteSound {
-    background-color:brown;
-    color: white;
-    border: solid white 1px;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  background-color: brown;
+  color: white;
+  border: solid white 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
-
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 481px) and (max-width: 720px) {
-   body {
+  body {
     height: 100%;
     width: 100%;
     background-size: cover;
-   
     background-position: 25% 60%;
     display: flex;
     justify-content: center;
-}
+  }
 
-main {
+  main {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     align-items: center;
     justify-content: safe center;
-}
+  }
 
-#gameMessages {
+  #gameMessages {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,14 +211,14 @@ main {
     min-height: 25%;
     margin: auto;
     margin-bottom: 20%;
-    background-color: rgba(78, 74, 74, .8);
-}
+    background-color: rgba(78, 74, 74, 0.8);
+  }
 
-.message {
+  .message {
     font-size: 1.6rem;
-}
+  }
 
-#gameStats {
+  #gameStats {
     margin-top: -10%;
     margin-bottom: 10%;
     justify-self: auto;
@@ -215,38 +226,41 @@ main {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    background-color: rgba(78, 74, 74, .7);
+    background-color: rgba(78, 74, 74, 0.7);
     border: 5px solid rgb(178, 178, 178);
     border-radius: 15px;
     box-shadow: 1px 1px 1px black;
     padding-bottom: 10px;
-    
-}
-#playerStats, #computerStats {
+  }
+  #playerStats,
+  #computerStats {
     margin: auto;
     margin-top: 15px;
     width: 60%;
     height: 40%;
-}
+  }
 
-.pHealthBar, .cHealthBar {
+  .pHealthBar,
+  .cHealthBar {
     height: 1.5rem;
     width: 100%;
-}
-.playerHealthText, .computerHealthText {
+  }
+  .playerHealthText,
+  .computerHealthText {
     font-size: 2rem;
     color: white;
     margin: 0;
-}
+  }
 
-#playerRolls, #computerRolls {
+  #playerRolls,
+  #computerRolls {
     font-size: 1.2rem;
-    margin-top: 5px; 
-}
+    margin-top: 5px;
+  }
 
-.controlPanel {
+  .controlPanel {
     align-self: flex-end;
-    background-color:rgb(46, 43, 43);
+    background-color: rgb(46, 43, 43);
     border: 3px solid rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -258,17 +272,17 @@ main {
     margin-right: 30px;
     margin-bottom: 90px;
     box-shadow: 1px 1px 1px black;
-}
+  }
 
-#resetButton {
+  #resetButton {
     font-size: 1.5rem;
     width: 80%;
     height: 25%;
     margin: 15px;
     cursor: pointer;
-}
+  }
 
-.rollDisplay {
+  .rollDisplay {
     height: 60%;
     display: flex;
     justify-content: center;
@@ -276,43 +290,35 @@ main {
     background-color: white;
     border: 3px solid white;
     width: 90%;
-}
+  }
 
-#rollReadout {
+  #rollReadout {
     height: 60px;
     width: 100%;
     border: 3px solid white;
     font-size: 2.5rem;
     color: rgb(48, 48, 48);
     text-align: center;
+  }
 }
-
-
-}
-
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
-    body {
-    height: 100vh;
-    width: 100vw;
+  body {
     background-size: cover;
     background-position: 25% 60%;
     display: flex;
     justify-content: center;
-}
+  }
 
-main {
+  main {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     align-items: center;
-    
+  }
 
-}
-
-#gameMessages {
+  #gameMessages {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,80 +326,82 @@ main {
     min-height: 25%;
     margin: auto;
     margin-bottom: 20%;
-    background-color: rgba(78, 74, 74, .8);
-}
+    background-color: rgba(78, 74, 74, 0.8);
+  }
 
-.message {
+  .message {
     font-size: 1.4rem;
-}
+  }
 
-#gameStats {
+  #gameStats {
     margin-top: -10%;
     margin-bottom: 10%;
     justify-self: auto;
     width: 90%;
-    
+
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    background-color: rgba(78, 74, 74, .7);
+    background-color: rgba(78, 74, 74, 0.7);
     border: 5px solid rgb(178, 178, 178);
     border-radius: 15px;
     box-shadow: 1px 1px 1px black;
     padding-bottom: 10px;
-    
-}
+  }
 
-#playerStats, #computerStats {
+  #playerStats,
+  #computerStats {
     margin: -10px auto;
     margin-top: 15px;
     width: 80%;
     height: 200px; /* Set this to your desired fixed height */
     overflow: auto; /* Add this to handle overflow */
-    
-}
+  }
 
-.pHealthBar, .cHealthBar {
+  .pHealthBar,
+  .cHealthBar {
     height: 1.5rem;
     width: 100%;
-}
+  }
 
-.playerHealthText, .computerHealthText {
+  .playerHealthText,
+  .computerHealthText {
     font-size: 2rem;
     color: white;
     margin: 0;
-}
+  }
 
-#playerRolls, #computerRolls {
+  #playerRolls,
+  #computerRolls {
     font-size: 1.2rem;
-    margin-top: 5px; 
-}
+    margin-top: 5px;
+  }
 
-.controlPanel {
+  .controlPanel {
     align-self: flex-end;
-    background-color:rgb(46, 43, 43);
+    background-color: rgb(46, 43, 43);
     border: 3px solid rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
     height: 40%;
     width: 40%;
     border-radius: 15px;
     margin-right: 30px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 1px black;
-}
+  }
 
-#resetButton {
+  #resetButton {
     font-size: 1.5rem;
     width: 80%;
     height: 25%;
     margin: 15px;
     cursor: pointer;
-}
+  }
 
-.rollDisplay {
+  .rollDisplay {
     height: 60%;
     display: flex;
     justify-content: center;
@@ -401,14 +409,14 @@ main {
     background-color: white;
     border: 3px solid white;
     width: 90%;
-}
+  }
 
-#rollReadout {
+  #rollReadout {
     height: 60px;
     width: 100%;
     border: 3px solid white;
     font-size: 2.5rem;
     color: rgb(48, 48, 48);
     text-align: center;
-}
+  }
 }
